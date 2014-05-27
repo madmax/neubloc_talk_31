@@ -1,0 +1,2 @@
+module ActionCachingsHelper
+end

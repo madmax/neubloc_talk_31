@@ -1,0 +1,10 @@
+<h1>Action Caching</h1>
+<hr>
+
+<h4>Dynamiczna treść:</h4>
+<p><%= Time.now %></p>
+
+<h4>Dynamiczna treść via AJAX:</h4>
+<%= content_tag :div, "Proszę czekać...", data: { ajax_loader: true, url: users_path } %>
+
+<%= link_to "Expire cache!", expire_action_cachings_path, class: 'btn btn-primary' %>

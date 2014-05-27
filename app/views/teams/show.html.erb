@@ -1,0 +1,12 @@
+<h1>Informacje o drużynie</h1>
+<hr>
+
+<h4><%= @team.name %></h4>
+
+<h5>Gracze:</h5>
+
+<ol>
+  <% @team.members.each do |member| %>
+    <li><%= link_to member.name, [:edit, member] %> - <%= member.bio %></li>
+  <% end %>
+</ol>

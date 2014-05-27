@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+#
+
+team = Team.create!(name: 'Neubloc Team')
+
+%w(grzegorz marcin kuba krzys wojtek piotrek tomek marek).each do |name|
+  team.members.create!(name: name, bio: Forgery(:lorem_ipsum).words(10))
+end
+
+
+

@@ -1,0 +1,14 @@
+<h1>Fragment caching</h1>
+<hr>
+
+<h3>Dynamiczna treść</h3>
+<p><%= Time.now %></p>
+
+<%= cache [:dynamic_content], expires_in: 10.seconds do %>
+  <h3>Dynamiczna treść <small>fragment caching</small></h3>
+
+  <p>
+    <%= sleep 2 %>
+    <%= Time.now %>
+  </p>
+<% end %>
