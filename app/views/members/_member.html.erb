@@ -1,0 +1,8 @@
+<%= cache member do %>
+  <li>
+    <strong>
+      <%= link_to member.name.humanize, [:edit, member] %>
+    </strong> -
+    <%= format_text(member.bio) %>
+  </li>
+<% end %>

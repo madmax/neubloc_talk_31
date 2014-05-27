@@ -9,8 +9,8 @@
 
 team = Team.create!(name: 'Neubloc Team')
 
-%w(grzegorz marcin kuba krzys wojtek piotrek tomek marek).each do |name|
-  team.members.create!(name: name, bio: Forgery(:lorem_ipsum).words(10))
+%w(grzegorz marcin kuba krzys wojtek piotrek tomek marek filip szymon jacek pawel).each do |name|
+  team.members.create!(name: name, bio: Forgery(:lorem_ipsum).words(20))
 end
 
 

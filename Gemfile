@@ -15,3 +15,4 @@ gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
 
 gem 'forgery'
+gem 'dalli'
